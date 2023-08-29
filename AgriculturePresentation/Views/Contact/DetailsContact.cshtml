@@ -1,0 +1,55 @@
+﻿@model EntityLayer.Concrete.Contact
+@{
+    ViewData["Title"] = "DetailsContact";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Mesaj Detayları</h4>
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    @Html.HiddenFor(x => x.ContactID)
+                    
+                    <div class="form-group">
+                        <div class="row">
+                        <div class="col-3">
+                            <label for="ex1">ID</label>
+                            <input type="text" asp-for="ContactID" id="ex1" class="form-control" disabled>
+                        </div>
+                        <div class="col-3">
+                            <label for="ex2">Ad - Soyad</label>
+                            <input type="text" asp-for="ContactName" id="ex2" class="form-control" disabled>
+                        </div>
+                        <div class="col-3">
+                            <label for="ex3">E-Mail</label>
+                            <input type="text" asp-for="ContactMail" id="ex3" class="form-control" disabled>
+                        </div>
+                        <div class="col-3">
+                            <label for="ex4">Tarih</label>
+                            <input type="text" asp-for="ContactDate" id="ex4" class="form-control" disabled>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-2">
+                        <label for="ex5">Mesaj</label>
+                        <textarea type="text" class="form-control" id="ex5" asp-for="ContactMessage" cols="5" rows="15" disabled></textarea>
+                    </div>
+                    <br>
+                </div>
+            </form>
+            <a href="/Contact/Index/" class="btn btn-outline-warning">Önceki Sayfa</a>
+        </div>
+    </div>
+</div>

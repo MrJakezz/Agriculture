@@ -1,0 +1,35 @@
+﻿@model EntityLayer.Concrete.Image
+@{
+    ViewData["Title"] = "AddImage";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Yeni Görsel Ekle</h4>
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label for="exampleInputName1">Başlık<font color="red">*</font></label>
+                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Başlık" asp-for="ImageTitle">
+                    <br>
+                    <span asp-validation-for="ImageTitle" class="text alert-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Açıklama<font color="red">*</font></label>
+                    <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Açıklama" asp-for="ImageDescription">
+                    <br>
+                    <span asp-validation-for="ImageDescription" class="text alert-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Görsel URL<font color="red">*</font></label>
+                    <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Görsel URL" asp-for="ImageUrl">
+                    <br>
+                    <span asp-validation-for="ImageUrl" class="text alert-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-outline-primary">Ekle</button>
+            </form>
+        </div>
+    </div>
+</div>
+
