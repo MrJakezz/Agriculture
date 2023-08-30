@@ -4,6 +4,7 @@
  */
 /* FONT PATH
  * -------------------------- */
+
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
@@ -560,6 +561,10 @@
 .fa-facebook-square:before {
   content: "\f082";
 }
+/*.fa-discord:before {
+    font: var(--fa-font-brands);
+    content: "\f392";
+}*/
 .fa-camera-retro:before {
   content: "\f083";
 }
