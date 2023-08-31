@@ -1,0 +1,24 @@
+﻿@using EntityLayer.Concrete
+@model List<Image>
+
+<div class="gallery" id="gallery">
+	<div class="container">
+		<h3 class="tittle">Görseller</h3>
+		<p class="heading-btm-w3ls">Görsellerimizi inceleyin.</p>
+		<div class="agile_gallery_grids w3-agile">
+			<ul class="clearfix demo">
+				@foreach(var item in Model) {
+					<li>
+						<div class="gallery-grid1">
+							<img src="@item.ImageUrl" alt=" " class="img-responsive" />
+							<div class="p-mask">
+								<h4>In <span>Harvest</span></h4>
+@* 								<p>Neque porro quisquam est, qui dolorem ipsum.</p> *@
+							</div>
+						</div>
+					</li>
+				}
+			</ul>
+		</div>
+	</div>
+</div>

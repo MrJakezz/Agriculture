@@ -155,6 +155,12 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("ServiceImage")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ServiceInnerClass")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ServiceOuterClass")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ServiceTitle")
                         .HasColumnType("nvarchar(max)");
 

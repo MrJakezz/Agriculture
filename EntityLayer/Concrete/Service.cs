@@ -12,5 +12,7 @@ namespace EntityLayer.Concrete
         public string ServiceTitle { get; set; }
         public string ServiceDescription { get; set; }
         public string ServiceImage { get; set; }
+        public string ServiceOuterClass { get; set; }
+        public string ServiceInnerClass { get; set; }
     }
 }
