@@ -9,6 +9,6 @@ namespace BusinessLayer.Abstract
 {
     public interface IAddressService : IGenericService<Address>
     {
-
+        string SelectMapInfo();
     }
 }

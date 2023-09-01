@@ -35,10 +35,15 @@ namespace BusinessLayer.Concrete
 
         public void Insert(Address t)
         {
-            throw new NotImplementedException();
+            _addressDal.Insert(t);
         }
 
-        public void Update(Address t)
+		public string SelectMapInfo()
+		{
+			return _addressDal.SelectMapInfo();
+		}
+
+		public void Update(Address t)
         {
             _addressDal.Update(t);
         }
