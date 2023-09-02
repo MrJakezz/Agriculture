@@ -32,5 +32,10 @@ namespace AgriculturePresentation.Controllers
 
 			return RedirectToAction("Index", "Default");
 		}
+
+        public PartialViewResult ScriptVC()
+        {
+            return PartialView();
+        }
 	}
 }

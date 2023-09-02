@@ -885,6 +885,30 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Erhan\\source\\repos\\AgriculturePresentation\\AgriculturePresentation\\wwwroot\\snow-login-form-starter\\css\\style.css",
+      "PackagePath": "staticwebassets\\snow-login-form-starter\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Erhan\\source\\repos\\AgriculturePresentation\\AgriculturePresentation\\wwwroot\\snow-login-form-starter\\images\\bgimage.jpg",
+      "PackagePath": "staticwebassets\\snow-login-form-starter\\images\\bgimage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Erhan\\source\\repos\\AgriculturePresentation\\AgriculturePresentation\\wwwroot\\snow-login-form-starter\\images\\bgimage2.png",
+      "PackagePath": "staticwebassets\\snow-login-form-starter\\images\\bgimage2.png"
+    },
+    {
+      "Id": "C:\\Users\\Erhan\\source\\repos\\AgriculturePresentation\\AgriculturePresentation\\wwwroot\\snow-login-form-starter\\images\\bgimage3.png",
+      "PackagePath": "staticwebassets\\snow-login-form-starter\\images\\bgimage3.png"
+    },
+    {
+      "Id": "C:\\Users\\Erhan\\source\\repos\\AgriculturePresentation\\AgriculturePresentation\\wwwroot\\snow-login-form-starter\\index.html",
+      "PackagePath": "staticwebassets\\snow-login-form-starter\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Erhan\\source\\repos\\AgriculturePresentation\\AgriculturePresentation\\wwwroot\\snow-login-form-starter\\starter-license-W3Layouts.txt",
+      "PackagePath": "staticwebassets\\snow-login-form-starter\\starter-license-W3Layouts.txt"
+    },
+    {
       "Id": "C:\\Users\\Erhan\\source\\repos\\AgriculturePresentation\\AgriculturePresentation\\wwwroot\\web\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\web\\css\\bootstrap.css"
     },
