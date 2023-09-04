@@ -11,5 +11,7 @@ namespace EntityLayer.Concrete
         public int AdminID { get; set; }
         public string AdminUsername { get; set; }
         public string AdminPassword { get; set; }
+        
+        //kjk
     }
 }
