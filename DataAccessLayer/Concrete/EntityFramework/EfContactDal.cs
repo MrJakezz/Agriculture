@@ -12,6 +12,13 @@ namespace DataAccessLayer.Concrete.EntityFramework
 {
     public class EfContactDal : GenericRepository<Contact>, IContactDal
     {
-        
+        public int GetMessageCount()
+        {
+            using var context = new AgricultureContext();
+
+            int messageCount = context.Contacts.Count();
+
+            return messageCount;
+        }
     }
 }

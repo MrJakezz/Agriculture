@@ -33,6 +33,11 @@ namespace BusinessLayer.Concrete
             return _teamDal.GetListAll();
         }
 
+        public int GetTeamCount()
+        {
+            return _teamDal.GetTeamCount();
+        }
+
         public void Insert(Team t)
         {
             _teamDal.Insert(t);

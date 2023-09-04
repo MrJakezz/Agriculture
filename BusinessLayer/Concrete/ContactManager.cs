@@ -34,6 +34,11 @@ namespace BusinessLayer.Concrete
             return _contactDal.GetListAll();
         }
 
+        public int GetMessageCount()
+        {
+            return _contactDal.GetMessageCount();
+        }
+
         public void Insert(Contact t)
         {
             _contactDal.Insert(t);

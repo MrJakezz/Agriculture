@@ -1,5 +1,6 @@
 ﻿﻿@using EntityLayer.Concrete
 @model List<Contact>
+
 <div class="row">
     <div class="col-md-12 stretch-card">
         <div class="card">
@@ -17,7 +18,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (var item in Model)
+
+                            @{
+                                //Mesajları, son gönderilenden ilk gönderilene doğru sırala.
+
+                                var reversedModel = Model.OrderByDescending(x => x.ContactDate).ToList(); 
+                            }
+
+                            @foreach (var item in reversedModel.Skip(Math.Max(0, Model.Count - 5))) //Sadece son 5 mesajı al.
                             {
                                 <tr>
                                     <td>@item.ContactID</td>

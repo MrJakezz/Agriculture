@@ -9,6 +9,6 @@ namespace DataAccessLayer.Abstract
 {
     public interface IServiceDal : IGenericDal<Service>
     {
-
+        int GetServiceCount();
     }
 }

@@ -33,6 +33,11 @@ namespace BusinessLayer.Concrete
             return _serviceDal.GetListAll();
         }
 
+        public int GetServiceCount()
+        {
+            return _serviceDal.GetServiceCount();
+        }
+
         public void Insert(Service t)
         {
             _serviceDal.Insert(t);

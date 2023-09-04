@@ -1,4 +1,5 @@
 ﻿using EntityLayer.Concrete;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace BusinessLayer.Abstract
 {
     public interface ITeamService : IGenericService<Team>
     {
-
+        int GetTeamCount();
     }
 }

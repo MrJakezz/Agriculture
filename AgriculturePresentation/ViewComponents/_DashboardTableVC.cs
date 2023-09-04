@@ -15,6 +15,7 @@ namespace AgriculturePresentation.ViewComponents
         public IViewComponentResult Invoke()
         {
             var values = _contactService.GetListAll();
+
             return View(values);
         }
     }

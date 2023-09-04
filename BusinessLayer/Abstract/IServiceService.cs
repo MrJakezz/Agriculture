@@ -9,6 +9,6 @@ namespace BusinessLayer.Abstract
 {
     public interface IServiceService : IGenericService<Service>
     {
-
+        int GetServiceCount();
     }
 }
