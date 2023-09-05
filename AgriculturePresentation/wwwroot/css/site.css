@@ -16,3 +16,10 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+logo {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
